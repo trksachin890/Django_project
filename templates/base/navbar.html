@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="{% url 'home' %}">Home </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          
+          <li class="nav-item">
+            <a href={% url 'family' %} >
+              <button type="button" class="btn btn-secondary">Family</button>
+            </a>
+            <a href={% url 'sibling' %} >
+              <button type="button" class="btn btn-secondary">Sibling</button>
+
+            </a>
+            <a href={% url 'cv' %} >
+              <button type="button" class="btn btn-secondary">CV</button>
+            </a>
+            <a href="{% url 'register' %}">
+              <button type="button" class="btn btn-dark" style="position: fixed; upper: 170px; right: 170px;">Register</button>
+            </a>
+            <a href=" {% url 'login' %}">
+              <button type="button" class="btn btn-dark" style="position: fixed; upper: 100px; right: 100px;">Login</button>
+            </a>
+            <a href=" {% url 'logout' %}">
+              <button type="button" class="btn btn-dark" style="position: fixed; upper: 50px; right: 20px;">Logout</button>
+            </a>
+          </li>
+          
+            
+          
+          </form>
+    </div>
+  </nav>

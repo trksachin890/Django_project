@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% block title %} Sibling {% endblock title %}
+{% block content %}
+<h1 style="text-align:center;">About Sibling</h1>
+<div style="text-align:center;">
+{% for siblings in sibling %}
+
+<h1>Brother Name: {{siblings.brothername}}</h1>
+<h1>Sister Name: {{siblings.sistername}}</h1>
+
+
+
+{% endfor %}
+</div>
+{% endblock content %}

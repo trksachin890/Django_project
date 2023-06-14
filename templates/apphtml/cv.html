@@ -1,0 +1,12 @@
+{% extends 'base/base.html' %}
+{% block title %} CV {% endblock title %}
+{% block content %}
+<h1 style="text-align:center;">CV</h1>
+<div style="text-align:center;">
+    {% if cv %}
+        <img download src="{{CV.jpg}}" alt="cv/">
+    {% else %}
+        <p>No CV image available</p>
+    {% endif %}
+</div>
+{% endblock content %}

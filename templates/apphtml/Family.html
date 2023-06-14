@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+{% block title %} Family {% endblock title %}
+{% block content %}
+<h1 style="text-align:center;">About Family</h1>
+<div style="text-align:center;">
+{% for familys in family %}
+
+<h1>Father Name: {{familys.fathername}}</h1>
+<h1>Mother Name: {{familys.mothername}}</h1>
+
+
+{% endfor %}
+</div>
+{% endblock content %}
