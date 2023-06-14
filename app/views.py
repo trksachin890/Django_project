@@ -64,4 +64,9 @@ def logout_user(request):
     logout(request)
     messages.info(request, "Logged out successfully!")
     return redirect('login')
+
+
+def random_funct():
+    pass
+
     
